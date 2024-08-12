@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #000;
+  --first-color: #003865;
+  --countdown-color: #ef5b0c;
+  --third-color: #3ccf4e;
+  --btn-color: #a6b9a2;
+  --gradient: linear-gradient(
+    165deg,
+    var(--first-color),
+    var(--countdown-color),
+    var(--btn-color),
+    var(--third-color)
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-circle {
+  background-image: var(--gradient);
+  width: 300px;
+  height: 300px;
+}
+
+.inner-circle {
+  background-color: var(--bg-color);
+  width: 290px;
+  height: 290px;
+}
+
+span {
+  font-size: 3rem;
+  color: var(--countdown-color);
+}
+
+.button-wrapper {
+  margin: 20px auto;
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  width: 150px;
+  border-radius: 4px;
+  padding: 8px;
+  border: none;
+  background-color: var(--btn-color);
+  font-weight: bold;
+}
